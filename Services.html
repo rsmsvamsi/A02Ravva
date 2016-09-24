@@ -1,0 +1,184 @@
+<html>
+<head>
+	<title>RavvaVamsi WebServices</title>
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/RavvaVamsiCSS.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<script type="text/javascript" src="js/RavvaVamsi.js"></script>
+</head>
+<body>
+<header>
+	<nav class="navbar navbar-default navbar-prmy">
+	  <div class="container">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="#">RavvaVamsi</a>
+	    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav">
+	        <li><a href="Home.html">Home <span class="sr-only">(current)</span></a></li>
+	        <li><a href="Contact.html">Contact</a></li>
+	        <li><a href="About.html">About</a></li>
+	        <li class="active"><a href="Services.html">Services</a></li>
+	        <li ><a href="test\test.html">Test Results</a></li>
+	      </ul>
+	      <ul class="nav navbar-nav navbar-right scIcons">
+	        <li>
+				<a href="https://github.com/rsmsvamsi" target="_blank" ><i class="fa fa-github-square" aria-hidden="true"></i></a>
+			</li>
+			<li>
+				<a href="https://bitbucket.org/rsmsvamsi" target="_blank" ><i class="fa fa-bitbucket-square" aria-hidden="true"></i></a>
+			</li>
+			<li>
+				<a href="https://www.linkedin.com/in/ravvavamsi" target="_blank" ><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+			</li>
+			<li>
+				<a href="https://facebook.com/ravvavamsi" target="_blank"  ><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+			</li>
+			<li>
+				<a href="https://twitter.com/ravvavamsi" target="_blank" ><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+			</li>
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+</header>
+<div class="container">
+	<div class="row">		
+		<div class="col-md-8">
+			<h1>Services</h1>
+			<table class="table">
+			<thead>
+				<tr>
+					<th>Order</th><th>Services</th><th>Period</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+							<input type="checkbox"  class="chkBox" name="check" checked />
+					</td>
+					<td>
+						<div class="serverTypes">
+							<i class="fa fa-server" aria-hidden="true"></i>
+							<br/> <input type="radio" name="hostingType" value="10" id="lH" checked /> <span>Linux Hosting</span><hr>10$/month 
+						</div>
+						<div class="serverTypes">
+							<i class="fa fa-server" aria-hidden="true"></i>
+							<br/> <input type="radio" name="hostingType" value="12" id="wH"/> <span>Windows Hosting</span><hr>12$/month
+						</div>
+					</td>
+					<td>
+						<label>Years</label><br/>
+						<input type="number" id="qty-1" class="form-control"  min="1" max="10" value="1" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+							<input type="checkbox" value="10" class="chkBox" name="check" checked />
+					</td>
+					<td>
+						<div class="txt_box">
+							<span>Domain URL</span><hr> 10$/year
+						</div>
+					</td>
+					<td>
+						<label>Years</label><br/>
+						<input type="number" id="qty-2" class="form-control"  min="1" max="10" value="1" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+							<input type="checkbox" value="10"  class="chkBox" name="check" checked />
+					</td>
+					<td>
+						<div class="txt_box">
+							<i class="fa fa-lock" aria-hidden="true"></i>  <span>SSL Encryption</span><hr> 10$/year
+						</div>
+					</td>
+					<td>
+						<label>Years</label><br/>
+						<input type="number" id="qty-3" class="form-control" min="1" max="10" value="1" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+							<input type="checkbox" value="20" class="chkBox" name="check" checked />
+					</td>
+					<td>
+						<div class="txt_box">
+							<i class="fa fa-search" aria-hidden="true"></i>  <span>Search Engine Optimiztion</span><hr> 20$/month
+						</div>
+					</td>
+					<td>
+						<label>Months</label><br/>
+						<input type="number" id="qty-4" class="form-control" min="1" max="12" value="1" />
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3">
+						<div id="amntTD">
+						<div class="btn orange">
+								<span class="btn btn-default" onclick="priceCal()" > <i class='fa fa-shopping-cart' aria-hidden='true'></i> Order Now </span>
+								<span class="btn btn-default" onclick="priceCal()" data-toggle="modal" data-target="#myModal" > <i class='fa fa-shopping-cart' aria-hidden='true'></i> Express Check Out </span>
+							</div>
+							<label>Total Amout:</label>
+							<span class="ttlAmnt">50$</span>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<th colspan="3"></th>
+			</tfoot>
+		</table>
+		
+
+		<!-- Modal -->
+		<div class="modal fade mdB" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="myModalLabel">RavvaVamsi Services</h4>
+		      </div>
+		      <div class="modal-body">
+		        <span id="suc">Congratulations your order has been place: </span><span class="ttlAmnt mdB">50$</span>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		</div>
+		<div class="col-md-4">
+
+			<h1>Address</h1>
+			<address>
+				316 N Fillmore <br>
+				Apt # 3 <br>
+				Maryville <br>
+				Missouri, MO 64468 <br>
+				<a href="mailto:S528170@mail.nwmissouri.edu">S528170@mail.nwmissouri.edu</a>
+			</address>
+			<iframe width="100%" height="315" src="https://www.youtube.com/embed/RJZ6Ef33Dc4" frameborder="0" allowfullscreen></iframe>
+		</div>
+	</div>
+</div>
+<footer>
+	<center>RavvaVamsi &copy 2016 </center>
+</footer>
+<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>
